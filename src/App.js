@@ -37,7 +37,7 @@ function App() {
             <h2>Coin List</h2>
             <select className={styles.sel}>
               {coins.map((coin) => (
-                <option className={styles.option}>
+                <option>
                   {coin.name} ({coin.symbol}) : ${coin.quotes.USD.price} USD
                 </option>
               ))}
@@ -60,7 +60,7 @@ function App() {
               <h3>Select Coin</h3>
               <select className={styles.sel}>
                 {coins.map((coin) => (
-                  <option className={styles.option}>
+                  <option>
                     {coin.name} : {usd / coin.quotes.USD.price} {coin.symbol}
                   </option>
                 ))}
